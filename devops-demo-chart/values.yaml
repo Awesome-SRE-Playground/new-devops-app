@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: alvishpatelhti/devops-demo-app
+  repository: alvishpatelhti/new-devops-app
   tag: v1
   pullPolicy: IfNotPresent
 
