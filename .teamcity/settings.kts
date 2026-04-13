@@ -38,9 +38,9 @@ object Build : BuildType({
     params {
         param("env.DOCKER_USERNAME", "aelvishpatelhti")
 
-        password("env.DOCKER_PASSWORD", "credentialsJSON:ea1ebc17-66a4-4b41-a0a0-4a011b4b2d8b")
+        password("env.DOCKER_PASSWORD", "")
 
-        password("env.KUBECONFIG_DATA", "credentialsJSON:ADD_YOUR_KUBECONFIG_SECRET_ID")
+        password("env.KUBECONFIG_DATA", "")
     }
 
     vcs {
