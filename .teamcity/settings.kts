@@ -48,7 +48,7 @@ object Build : BuildType({
         script {
             name = "Build Docker Image"
             scriptContent = """
-                docker build -t %env.DOCKER_USERNAME%/devops-demo-app:%build.number% ./app
+                docker build -t %env.DOCKER_USERNAME%/new-devops-app:%build.number% ./app
             """.trimIndent()
         }
 
@@ -62,7 +62,7 @@ object Build : BuildType({
         script {
             name = "Push Image"
             scriptContent = """
-                docker push %env.DOCKER_USERNAME%/devops-demo-app:%build.number%
+                docker push %env.DOCKER_USERNAME%/new-devops-app:%build.number%
             """.trimIndent()
         }
 
