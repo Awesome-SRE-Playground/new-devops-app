@@ -28,8 +28,10 @@ object Build : BuildType({
             name = "Setup Kubeconfig"
             scriptContent = """
                 echo "%env.KUBECONFIG_DATA%" | base64 --decode > kubeconfig.yaml
+                echo "===== DEBUG KUBECONFIG ====="
+                cat kubeconfig.yaml
                 export KUBECONFIG=$(pwd)/kubeconfig.yaml
-
+                kubectl config get-contexts
                 kubectl get nodes
             """.trimIndent()
         }
