@@ -71,7 +71,7 @@ object Build : BuildType({
         script {
             name = "Build Docker Image"
             scriptContent = """
-                docker build -t $DOCKER_USERNAME/devops-demo-app:%build.number% ./app
+                docker build -t $DOCKER_USERNAME/new-devops-app:%build.number% ./app
             """.trimIndent()
         }
 
