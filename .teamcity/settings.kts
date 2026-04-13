@@ -12,7 +12,7 @@ object Build : BuildType({
     name = "CI/CD - Build & Deploy"
 
     params {
-        param("env.DOCKER_USERNAME", "aelvishpatelhti")
+        param("env.DOCKER_USERNAME", "alvishpatelhti")
 
         password("env.DOCKER_PASSWORD", "")
         password("env.KUBECONFIG_DATA", "")
